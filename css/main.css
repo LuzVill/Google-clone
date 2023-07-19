@@ -1,0 +1,294 @@
+body {
+    /* Margen predeterminado*/
+    margin: 0;
+    /* Margen de hacía dentro*/
+    padding: 0;
+    /* tamaño de fuente*/
+    font-size: 13px;
+    /* tipo de fuente del texto*/
+    font-family: Arial, sans-serif;
+    
+}
+/************************************************
+/*****************************************************
+/******************************************
+/* NAVEGACIÓN */
+
+header{
+    /* width - ancho/// heaight - alto */
+    width: 100%;
+    height: 55px;
+}
+
+header nav {
+    /* como se puede mover el elemento */
+    display: flex;
+    /* lo lleva al centro, izquiera o derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    /* cambiar la forma en la que aparecen las viñetas o quitar las viñetas*/
+    list-style:none;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* altura : automática*/
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /* color del texto */
+    color:rgb(21, 21, 21);
+    /* Línea de subrayado */
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain; 
+    margin-right: 18px;
+}
+
+.iconme{
+    border-radius: 20px;
+}
+
+/****************************************************************************************
+************************************************************************************
+***************************************************************************
+*******************************************/
+/* MAIN*/
+
+main {
+    text-align: center;
+    margin-top: 30px;
+}
+/*sección logo*/
+main .main-logo{
+    width: 290px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+/* logo google*/
+main .main-logo img{
+    width: 290px;
+}
+
+/* sección input*/
+main .main-input{
+    /* width - anchura */
+    width: 600px;
+    /* margenes y centrado */
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* cajita gris redondeada*/
+main .main-input-container{
+    border: 2px solid #dfe1e5;
+    /*bordes redodeados*/
+    border-radius: 20px;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 40px;
+    /* dar o quitar un borde cuando etsa inactivo*/
+    border: none;
+    /* eliminar borde del input cuando esta activo*/
+    outline: none;
+    width: 550px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    padding-right: 4%;
+    background-repeat: no-repeat;
+}
+
+/* ICONO DE MICROFONO*/
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png);   
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 3%;
+}
+
+/*ICONO DE CÁMARA*/
+main .main-input .cam-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f9/Google_Lens_-_new_logo.png);   
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 3%;
+    width: 25px;
+    height: 25px;
+}
+
+main .main-buttons{
+    width: 600px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 40px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;    
+    margin-right: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* nos permite agregarle diseño al ´pponer el cursor sobre el elemento*/
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #20212447
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 0px rgba (0,0,0,.1)
+}
+
+hr{
+    margin-top: 275px;
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #f2f2f2;
+    /* como se puede mover el elemento */
+    display: flex;
+    /* lo lleva al centro, izquiera o derecha*/
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 49px;
+    justify-content: space-between;
+}
+
+footer .footer-left{
+    /* cambiar la forma en la que aparecen las viñetas o quitar las viñetas*/
+    list-style:none;
+    width: 600px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    /* altura : automática*/
+    height: auto;
+    padding-left: 2%;
+    color: #70757a;
+    text-decoration: none;
+}
+/* enlaces del footer left*/
+footer .footer-left .sobre a{
+    padding: 0 2px;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+footer .footer-left .publicidad a{
+    padding: 0 2px;
+    margin-left: 15%;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+footer .footer-left .negocios a{
+    padding: 0 2px;
+    margin-left: 30%;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+footer .footer-left .funcion a{
+    padding: 0 2px;
+    margin-left: 36px;
+    margin-right: 0%;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+
+
+
+footer .footer-right{
+    /* cambiar la forma en la que aparecen las viñetas o quitar las viñetas*/
+    list-style:none;
+    width: 500px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    /* altura : automática*/
+    padding-right: 2%;
+    color: #70757a;
+    text-decoration: none;
+}
+
+
+/* enlaces del footer right*/
+footer .footer-right .privacidad a{
+    padding: 0 2px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+footer .footer-right .condiciones a{
+    padding: 0 2px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+footer .footer-right .preferencias a{
+    padding: 2px 0px;
+    margin-right: 2px;
+    text-decoration: none;
+    color: #70757a;
+    background-size: contain;
+    font-size: 15px;
+}
+
+footer .footer-left a:hover{
+    border-bottom: 1px solid #70757a;
+    box-shadow: 0 0 0px rgba (0,0,0,.1);
+}
+
+footer .footer-right a:hover{
+    border-bottom: 1px solid #70757a;
+    box-shadow: 0 0 0px rgba (0,0,0,.1);
+}
